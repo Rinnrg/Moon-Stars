@@ -2,10 +2,14 @@ import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
 
+const locomotiveScroll =
+  typeof window !== `undefined` ? require("locomotive-scroll").default : null;
+
 const navigation = [
-  { name: "About", href: "/about" },
-  { name: "Projects", href: "/projects" },
-  { name: "Contact", href: "/contact" },
+  { name: "About M&S", href: "/about" },
+  { name: "Gallery", href: "/projects" },
+  { name: "Gallerya", href: "/projectsa" },
+  
 ];
 
 export default function Home() {
@@ -30,14 +34,13 @@ export default function Home() {
         quantity={100}
       />
       <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
-        Suvwe Money
+        Moon & Stars
       </h1>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-16 text-center animate-fade-in">
         <h2 className="text-sm text-zinc-500 ">
-          Hi there! I'm Suvwe and React is my superpower. NextJs? Let's just say
-          it's the new kid on the block.
+          Selamat datang di web moon & stars, disini adalah tempat asal muasal moon & stars.
         </h2>
       </div>
     </div>

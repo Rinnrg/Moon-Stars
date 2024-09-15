@@ -6,12 +6,12 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "Suvwe Money's Portfolio",
-    template: "%s | Portfolio",
+    default: "Moon & Stars",
+    template: "MoonStars",
   },
-  description: "Suvwe Money's Portfolio",
+  description: "MoonStars",
   icons: {
-    shortcut: "/favicon.png",
+    shortcut: "/moonstars.svg",
   },
 };
 

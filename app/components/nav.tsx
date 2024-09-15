@@ -1,5 +1,5 @@
 "use client";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, HomeIcon } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -28,32 +28,34 @@ export const Navigation: React.FC = () => {
       >
         <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
           <div className="flex justify-between gap-8">
+          <Link
+              href="/"
+              className="duration-200 text-zinc-400 hover:text-zinc-100"
+            >
+              Home
+            </Link>
             <Link
               href="/about"
               className="duration-200 text-zinc-400 hover:text-zinc-100"
             >
-              About
+              About M&S
             </Link>
             <Link
               href="/projects"
               className="duration-200 text-zinc-400 hover:text-zinc-100"
             >
-              Projects
+              Gallery
             </Link>
-            <Link
-              href="/contact"
-              className="duration-200 text-zinc-400 hover:text-zinc-100"
-            >
-              Contact
-            </Link>
+            
+            
           </div>
 
-          <Link
+          {/*<Link
             href="/"
             className="duration-200 text-zinc-300 hover:text-zinc-100"
           >
-            <ArrowLeft className="w-6 h-6 " />
-          </Link>
+            <HomeIcon className="w-6 h-6 " />
+          </Link>*/}
         </div>
       </div>
     </header>
