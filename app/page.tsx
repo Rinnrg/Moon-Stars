@@ -8,7 +8,7 @@ const locomotiveScroll =
 const navigation = [
   { name: "About M&S", href: "/about" },
   { name: "Gallery", href: "/projects" },
-  { name: "Gallerya", href: "/projectsa" },
+
   
 ];
 
