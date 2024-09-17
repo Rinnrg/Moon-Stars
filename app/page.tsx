@@ -6,7 +6,7 @@ import Particles from "./components/particles";
 import Cursor from "../app/Cursor/Cursor"; // Corrected import path
 
 const navigation = [
-  { name: "About M&S", href: "/about" },
+  { name: "About M&S", href: "/abouts" },
   { name: "Gallery", href: "/projectss" },
 ];
 
