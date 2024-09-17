@@ -7,6 +7,8 @@ import { Card } from "../components/card";
 import { Link as LinkIcon, Instagram as InstagramIcon } from "lucide-react";
 import dynamic from "next/dynamic";
 
+
+
 // Dynamically import AnimatedCard
 const AnimatedCard = dynamic(() => import("../components/AnimatedCard"), {
   ssr: false,
@@ -217,5 +219,6 @@ export default async function ProjectsPage() {
         </div>
       </div>
     </div>
+
   );
 }

@@ -3,8 +3,15 @@
 @tailwind utilities;
 
 @layer base {
+  /* Menambahkan outline pada teks dengan stroke */
   .text-edge-outline {
-    -webkit-text-stroke: 1px rgba(255,255,255,0.3);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3); /* Untuk browser berbasis WebKit seperti Chrome */
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3); /* Dukungan untuk browser lain seperti Firefox */
   }
-} 
 
+  /* Menyembunyikan kursor default */
+  .cursor-none {
+    cursor: none;
+  }
+  
+}
